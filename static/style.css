@@ -1,0 +1,56 @@
+body {
+    background: #EEE;
+}
+
+#hashtag {
+    color: rgb(11, 250, 119);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+section {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+}
+
+ul li {
+    margin: 1rem;
+    padding-bottom: 2rem;
+}
+
+h1, h2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    background: black;
+    color: white;
+    padding: .2rem .5rem;
+    display: inline-block;
+}
+
+h1, h2, h3 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.2rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+}
+
+video {
+    box-shadow: 0px 0px 20px -2px black;
+}

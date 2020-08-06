@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <section>
+        <h2>Check Out Videos For <span id="hashtag">#{{ hashtag }}</span></h2>
+        <ul>
+            {% for video in response %}
+                <li>
+                    <h3>{{ video.description }}</h3>
+                    <video width="{{ video.video.width }}" height="{{ video.video.height }}" controls>
+                        <source src="{{ video.video.playAddr }}">
+                    </video>
+                    <p>Author: {{ video.author.nickname }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+{% endblock %}
